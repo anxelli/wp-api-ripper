@@ -1,0 +1,74 @@
+{
+	"name": "wp-api-ripper",
+	"description": "Devora APIs REST de WordPress y extrae JSON puro y funcional. | El susurro del caos, quebrantando el orden celestial.",
+	"version": "0.0.1",
+	"type": "module",
+	"main": "bin/index.js",
+	"bin": {
+		"wp-api-ripper": "bin/index.js"
+	},
+	"scripts": {
+		"start": "node bin/index.js",
+		"dev": "node --watch bin/index.js"
+	},
+	"files": [
+		"bin/",
+		"src/"
+	],
+	"exports": {
+		".": "./bin/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/anxelli/wp-api-ripper.git"
+	},
+	"homepage": "https://nyxia.anxelli.com",
+	"bugs": {
+		"url": "https://github.com/anxelli/wp-api-ripper.git/issues"
+	},
+	"keywords": [
+		"scraper",
+		"wordpress",
+		"api",
+		"json",
+		"cli"
+	],
+	"author": {
+		"name": "Angel Amaro & Nyxia Lovelace",
+		"email": "anxelli.dev@icloud.com",
+		"company": "arteDigitalMX",
+		"website": "https://x.com/anxelli_dev",
+		"url": "https://x.com/NyxiaLovelace",
+		"twitter": "@anxelli_dev",
+		"github": "@anxelli"
+	},
+	"contributors": [
+		{
+			"name": "Angel Amaro",
+			"email": "anxelli.dev@icloud.com",
+			"github": "@anxelli",
+			"x": "@anxelli_dev"
+		},
+		{
+			"name": "Nyxia Lovelace",
+			"website": "https://x.com/NyxiaLovelace"
+		}
+	],
+	"private": false,
+	"license": "GPL-3.0-or-later",
+	"engines": {
+		"node": ">=22.15.0"
+	},
+	"dependencies": {
+		"archiver": "7.0.1",
+		"axios": "1.9.0",
+		"cheerio": "1.0.0",
+		"cli-progress": "3.12.0",
+		"commander": "13.1.0",
+		"date-fns": "4.1.0",
+		"enquirer": "2.4.1",
+		"html-entities": "2.6.0",
+		"ora": "8.2.0",
+		"slugify": "1.6.6"
+	}
+}
